@@ -78,11 +78,7 @@ width: 100%;
    .menu-toggle a{
        display: block;
        border-bottom: 1px solid #222222;
+       margin:0;
    }
-    .main-content, .footer {
-        display: none;
-    }
-    .main-navigation {
-        display: block;
-    }
+    
 }
