@@ -67,6 +67,18 @@ h4, p, q, small, nav, button, form{
     font-family: "Montserrat", sans-serif;
 }
 @media screen and (min-width: 767px) {
+   label{
+       display: block;
+       cursor:pointer;
+   }
+   .menu-toggle{
+text-align: center;
+width: 100%;
+   }
+   .menu-toggle a{
+       display: block;
+       border-bottom: 1px solid #222222;
+   }
     .main-content, .footer {
         display: none;
     }
