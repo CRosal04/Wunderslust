@@ -11,7 +11,7 @@
   }
   /* <uniquifier>: Use a unique and descriptive class name*/
 
-  .montserrat-<uniquifier> {
+  .montserrat{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -62,4 +62,7 @@ table {
 }
 h1, h2, h3{
     font-family: "Molle", cursive;
+}
+h4, p, q, small, nav, button, form{
+    font-family: "Montserrat", sans-serif;
 }
