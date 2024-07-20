@@ -67,7 +67,7 @@ h4, p, q, small, nav, button, form{
     font-family: "Montserrat", sans-serif;
 }
 @media (max-width: 767px) {
-    .content, .footer {
+    .main-content, .footer {
         display: none;
     }
     .main-navigation {
