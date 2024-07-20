@@ -3,12 +3,20 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+
 .molle-regular-italic {
     font-family: "Molle", cursive;
     font-weight: 400;
     font-style: italic;
   }
-  
+  /* <uniquifier>: Use a unique and descriptive class name*/
+
+  .montserrat-<uniquifier> {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }  
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,5 +61,5 @@ table {
 	border-spacing: 0;
 }
 h1, h2, h3{
-    Molle
+    font-family: ;
 }
