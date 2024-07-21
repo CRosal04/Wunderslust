@@ -85,6 +85,9 @@ width: 100%;
     .logo{
         display: none;
     }
+    .main-content{
+display: none;
+    }
 }
 @media screen and (min-width: 1250px){
 
