@@ -117,6 +117,7 @@ text-transform: uppercase;
     #logo{
         display: none;
     }
+
     #main-content,footer, header h1, header p{
 display: none;
     }
