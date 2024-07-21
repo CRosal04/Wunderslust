@@ -105,13 +105,14 @@ width: 100%;
 text-transform: uppercase;
 }
 
-   }
+   
    #menu-toggle a ,#menu-toggle label{
        display: block;
        border: .5px solid #222222;
        margin: 0;
        padding: 4em;
        text-decoration:none;
+       font-weight: 600;
    }
     #logo{
         display: none;
@@ -126,6 +127,7 @@ display: none;
     li a{
         color:black;
     }
+}
 
 @media screen and (min-width: 1250px){
 
