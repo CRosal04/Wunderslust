@@ -68,24 +68,25 @@ h4, p, q, small, nav, button, form{
 }
 @media screen and (max-width: 767px) {
    
-    label{
+    #toggle{
        display: block;
        cursor:pointer;
        background-color: #000000;
    }
-   .menu-toggle{
+   #menu-toggle{
 text-align: center;
 width: 100%;
+
    }
-   .menu-toggle a{
+   #menu-toggle a{
        display: block;
        border-bottom: 1px solid #222222;
        margin:0;
    }
-    .logo{
+    #logo{
         display: none;
     }
-    .main-content{
+    #main-content,footer, header h1, header p{
 display: none;
     }
 }
