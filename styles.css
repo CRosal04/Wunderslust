@@ -71,6 +71,7 @@ h4, p, q, small, nav, button, form{
     label{
        display: block;
        cursor:pointer;
+       background-color: #000000;
    }
    .menu-toggle{
 text-align: center;
