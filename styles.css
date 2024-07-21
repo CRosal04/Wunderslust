@@ -66,11 +66,19 @@ h1, h2, h3{
 h4, p, q, small, nav, button, form{
     font-family: "Montserrat", sans-serif;
 }
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  
 @media screen and (max-width: 767px) {
    
     #toggle{
        display: block;
-       cursor:pointer;
        background-color: #000000;
    }
    #menu-toggle{
@@ -80,14 +88,18 @@ width: 100%;
    }
    #menu-toggle a{
        display: block;
-       border-bottom: 1px solid #222222;
-       margin:0;
+       border: .5px solid #222222;
+       margin: 0;
+       padding: 20;
    }
     #logo{
         display: none;
     }
     #main-content,footer, header h1, header p{
 display: none;
+    }
+    ul{
+        background-color:#55BCD5 ;
     }
 }
 @media screen and (min-width: 1250px){
