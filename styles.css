@@ -74,23 +74,39 @@ h4, p, q, small, nav, button, form{
     height: 1px;
     overflow: hidden;
   }
+  #skip{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+   
+  #skip:focus{
+    position: static;
+    width: auto;
+    height: auto;
+  }
+  
   
 @media screen and (max-width: 767px) {
    
     #toggle{
-       display: block;
+    
        background-color: #000000;
    }
    #menu-toggle{
 text-align: center;
 width: 100%;
-
+padding: 5em;
    }
    #menu-toggle a{
        display: block;
        border: .5px solid #222222;
        margin: 0;
-       padding: 20;
+     
+       text-style
    }
     #logo{
         display: none;
