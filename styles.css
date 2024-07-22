@@ -82,7 +82,15 @@ h4, p, q, small, nav, button, form{
   width: auto;
   height: auto;
 }
-
+label{
+    margin: 0 40px 0 0;
+    font: 26px;
+    display:none;
+}
+#toggle
+{
+    display: none;
+}
   
 @media screen and (max-width: 767px) {
     .sr-only {
@@ -93,7 +101,10 @@ h4, p, q, small, nav, button, form{
         height: 1px;
         overflow: hidden;
     }
-
+    label{
+        display:block;
+        cursor: pointer;
+    }
     #menu-toggle label{
         color:#FFFFFF;
        background-color: #000000;
@@ -106,21 +117,23 @@ text-transform: uppercase;
 }
 
    
-   #menu-toggle a ,#menu-toggle label{
+   #menu-toggle a{
        display: block;
        border: .5px solid #222222;
        margin: 0;
-       padding: 4em;
+       padding: 6em;
        text-decoration:none;
        font-weight: 600;
+       border-radius: 5px;
+       padding-top: .25rem;
+       max-width: 350px;
+       padding-bottom: 2rem;
+       display: block;
+       margin: auto;
+       height: 100vh;
+       background: white;
    }
-    #logo{
-        display: none;
-    }
 
-    #main-content,footer, header h1, header p{
-display: none;
-    }
     ul{
        
         background-color:#55BCD5 ;
