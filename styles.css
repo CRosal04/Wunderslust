@@ -138,6 +138,8 @@ label{
 }
 #fName,#lName,#prefEmail,#email,#phone,#prefText,#prefPhone,#destination,#travelTime{
     border-color: #9B26B0; 
+    width: 300px;
+    height: 40px;
    
 }
 
