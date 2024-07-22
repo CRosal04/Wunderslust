@@ -82,19 +82,25 @@ header{
 #plan section{
     border: 5px solid #FFFFFF;
     background: #55BCD5;
-   padding: 5px ;
+   padding: 15px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 300px;
+    height: 300px;
 }
-#plan div{
-    display: grid;
-    grid-template-columns: repeat(4, 2fr);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
 
+section h3{
+    padding: 20px 0;
 }
+section h4{
+    padding: 20px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+}
+
 #about{
    background-color:#499BD2;
 }
@@ -189,7 +195,31 @@ padding: 11px 0;
 #plan div{
     display: grid;
     grid-template-columns: repeat(1, 2fr);
+    gap:20px;
+    justify-content: center;
+    align-items: center;
 }
+#about div{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;}
+@media screen and (min-width: 850px){
+    #plan div{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    #about div{
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+}
+}
+
 @media screen and (min-width: 1250px){
 
     nav {
@@ -235,6 +265,21 @@ float:left;
   nav li:hover{
     background-color:#F6D64A ;
     padding: 10px 10px;
+}
+#plan div{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+#about div{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 20px;
+    justify-content: center;
+        align-items: center;
 }
 
 }
