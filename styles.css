@@ -104,23 +104,22 @@ label{
     label{
         display: block;
     }
-#toggle:checked +  .active{
-    display: block;
-}
-    #menu-toggle label{
-        display: block;
-        color:#FFFFFF;
-       background-color: #000000;
-       margin: 0;
-       height: 10vh;
-    }
    #menu-toggle{
+       display: block;
 text-align: center;
 width: 100%;
 text-transform: uppercase;
 padding: 11px 0;
-}
 
+}
+#menu-toggle label{
+    display: block;
+    color:#FFFFFF;
+   background-color: #000000;
+   margin: 0;
+   padding-top: 2rem;
+   height: 5vh;
+}
    
    #menu-toggle a{
        display: block;
@@ -129,11 +128,19 @@ padding: 11px 0;
        text-decoration:none;
        font-weight: 600;
        border-radius: 5px;
-       padding-top: .25rem;
+       padding-top: 5rem;
        padding-bottom: 2rem;
-       height: 15vh;
+       height: 10vh;
     
    }
+   #menu-page ul {
+    display: block;
+    background-color: #333;
+}
+
+#menu-page li {
+    padding: 10px 0;
+}
 
     ul{
        
