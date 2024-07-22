@@ -66,7 +66,9 @@ h1, h2, h3{
 h4, p, q, small, nav, button, form{
     font-family: "Montserrat", sans-serif;
 }
-
+header{
+    background-color: aqua;
+}
   
   #skip{
   position: absolute;
@@ -82,7 +84,7 @@ h4, p, q, small, nav, button, form{
   width: auto;
   height: auto;
 }
-label{
+/*label{
     margin: 0 40px 0 0;
     font: 26px;
     display:none;
@@ -91,7 +93,7 @@ label{
 {
     display: none;
 }
-  
+  */
 @media screen and (max-width: 767px) {
     .sr-only {
         position: absolute;
@@ -101,16 +103,16 @@ label{
         height: 1px;
         overflow: hidden;
     }
-    label{
-        display: block;
-    }
    #menu-toggle{
-       display: block;
+display: block;
 text-align: center;
 width: 100%;
 text-transform: uppercase;
 padding: 11px 0;
 
+}
+#menu-toggle input {
+    display: none;
 }
 #menu-toggle label{
     display: block;
@@ -119,6 +121,7 @@ padding: 11px 0;
    margin: 0;
    padding-top: 2rem;
    height: 5vh;
+   cursor: pointer;
 }
    
    #menu-toggle a{
@@ -133,6 +136,7 @@ padding: 11px 0;
        height: 10vh;
     
    }
+ 
    #menu-page ul {
     display: block;
     background-color: #333;
