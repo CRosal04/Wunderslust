@@ -67,9 +67,16 @@ h4, p, q, small, nav, button, form{
     font-family: "Montserrat", sans-serif;
 }
 header{
-    background-color: aqua;
+    background-image: linear-gradient(#55BCD5, #FFFFFF);
 }
-  
+
+#plan{
+    background-color: #F6D64A;
+}
+nav a:hover{
+    background-color:#F6D64A ;
+}
+
   #skip{
   position: absolute;
   left: -10000px;
@@ -84,7 +91,7 @@ header{
   width: auto;
   height: auto;
 }
-/*label{
+label{
     margin: 0 40px 0 0;
     font: 26px;
     display:none;
@@ -93,16 +100,16 @@ header{
 {
     display: none;
 }
-  */
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
 @media screen and (max-width: 767px) {
-    .sr-only {
-        position: absolute;
-        left: -10000px;
-        top: auto;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-    }
+ 
    #menu-toggle{
 display: block;
 text-align: center;
@@ -157,4 +164,28 @@ padding: 11px 0;
 
 @media screen and (min-width: 1250px){
 
+    nav {
+    display: inline-block;
+    }
+    nav li {
+        list-style:none;
+      }
+      nav a{
+    text-decoration:none;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: var(--white);
+    color:#000000;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    width: auto; 
+    display: flex; 
+    justify-content: flex-end; 
+  }
 }
