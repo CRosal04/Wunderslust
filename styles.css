@@ -72,9 +72,10 @@ header{
 
 #plan{
     background-color: #F6D64A;
+
 }
-nav a:hover{
-    background-color:#F6D64A ;
+#about{
+   background-color:#55BCD5;
 }
 
   #skip{
@@ -107,6 +108,9 @@ label{
     width: 1px;
     height: 1px;
     overflow: hidden;
+}
+footer{
+    background-color:#EAEAEA ;
 }
 @media screen and (max-width: 767px) {
  
@@ -188,4 +192,8 @@ padding: 11px 0;
     display: flex; 
     justify-content: flex-end; 
   }
+  nav a:hover{
+    background-color:#F6D64A ;
+}
+
 }
