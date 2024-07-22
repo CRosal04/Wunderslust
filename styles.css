@@ -101,18 +101,24 @@ label{
         height: 1px;
         overflow: hidden;
     }
-
+    label{
+        display: block;
+    }
+#toggle:checked +  .active{
+    display: block;
+}
     #menu-toggle label{
         display: block;
         color:#FFFFFF;
        background-color: #000000;
        margin: 0;
-       height: 15vh;
+       height: 10vh;
     }
    #menu-toggle{
 text-align: center;
 width: 100%;
 text-transform: uppercase;
+padding: 11px 0;
 }
 
    
@@ -125,7 +131,7 @@ text-transform: uppercase;
        border-radius: 5px;
        padding-top: .25rem;
        padding-bottom: 2rem;
-       height: 20vh;
+       height: 15vh;
     
    }
 
