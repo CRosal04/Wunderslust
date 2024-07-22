@@ -101,14 +101,13 @@ label{
         height: 1px;
         overflow: hidden;
     }
-    label{
-        display:block;
-        cursor: pointer;
-    }
+
     #menu-toggle label{
+        display: block;
         color:#FFFFFF;
        background-color: #000000;
-       
+       margin: 0;
+       height: 15vh;
     }
    #menu-toggle{
 text-align: center;
@@ -121,17 +120,13 @@ text-transform: uppercase;
        display: block;
        border: .5px solid #222222;
        margin: 0;
-       padding: 6em;
        text-decoration:none;
        font-weight: 600;
        border-radius: 5px;
        padding-top: .25rem;
-       max-width: 350px;
        padding-bottom: 2rem;
-       display: block;
-       margin: auto;
-       height: 100vh;
-       background: white;
+       height: 20vh;
+    
    }
 
     ul{
