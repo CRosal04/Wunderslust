@@ -203,6 +203,40 @@ label{
 .radio-input input:checked + .radio-control::before {
     opacity: 1;
 }
+/* Custom Select Styles */
+.custom-select {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+}
+
+.custom-select select {
+    appearance: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.custom-select::after {
+    content: '▼';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #9B26B0;
+}
+
+.custom-select select:focus {
+    outline: none;
+    border-color: #9B26B0; 
+}
+.custom-select .focus {
+    display: none;
+}
+
 /* Submit Button Styles */
 input[type="submit"] {
     background-color: #9B26B0; 
@@ -383,5 +417,8 @@ float:left;
     justify-content: center;
     align-items: center;
 }
-
+#contact div{
+    display: grid;
+    grid-template-columns: repeat(1fr 2fr 1fr);
+}
 }
