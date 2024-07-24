@@ -119,15 +119,17 @@ section h4{
   width: auto;
   height: auto;
 }
+/*toggle*/
 label{
     margin: 0 40px 0 0;
     font: 26px;
     display:none;
 }
-#toggle
-{
+#toggle{
     display: none;
 }
+
+
 .sr-only {
     position: absolute;
     left: -10000px;
@@ -254,20 +256,34 @@ input[type="submit"]:hover {
 footer{
     background-color:#EAEAEA ;
 }
-@media screen and (max-width: 767px) {
- 
-   #menu-toggle{
-display: block;
-text-align: center;
-width: 100%;
-text-transform: uppercase;
-padding: 11px 0;
 
-}
-#menu-toggle input {
-    display: none;
-}
+@media screen and (max-width: 767px) {
+    #menu-toggle {
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 30px;  
+        z-index: 1;  
+        -webkit-user-select: none;
+        -moz-user-select: none;
+         -ms-user-select: none;
+             user-select: none;
+      }
+      #menu-toggle input {
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: -7px;
+        left: -5px;  
+        padding: 0;
+        cursor: pointer;  
+        opacity: 0; /* hide this */
+        z-index: 2; /* and place it over the hamburger */  
+        -webkit-touch-callout: none;
+      }
 #menu-toggle label{
+    position: relative;
     display: block;
     color:#FFFFFF;
    background-color: #000000;
@@ -275,11 +291,12 @@ padding: 11px 0;
    padding-top: 2rem;
    height: 5vh;
    cursor: pointer;
+   text-align: center;
 }
-   
+
    #menu-toggle a{
        display: block;
-       border: .5px solid #222222;
+       
        margin: 0;
        text-decoration:none;
        font-weight: 600;
@@ -287,26 +304,49 @@ padding: 11px 0;
        padding-top: 5rem;
        padding-bottom: 2rem;
        height: 10vh;
-    
+       -webkit-transition: color 0.3s ease;
+       -o-transition: color 0.3s ease;
+       transition: color 0.3s ease;
    }
- 
-   #menu-page ul {
-    display: block;
-    background-color: #333;
+   ul {
+    position: absolute;
+    width: 500px;
+    margin: -100px 0 0 -50px;
+    list-style-type: none;
+    
+    right: -100%;
+    -webkit-transition: left 0.3s ease;
+    -o-transition: left 0.3s ease;
+    transition: left 0.3s ease; 
+  }
+  
+  ul li {
+    padding: 15px 0;
+    font-size: 22px;
+    border: .5px solid #222222;
+  }
+  
+   nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
-#menu-page li {
-    padding: 10px 0;
+nav li {
+    
+    background-color: #499BD2;
 }
+#menu-toggle input:checked ~ ul {
+    left: 0;
+  }
 
-    ul{
-       
-        background-color:#55BCD5 ;
-    }
-    li a{
-        color:black;
-    }
-}
+  /*sections*/
 #plan div{
     display: grid;
     grid-template-columns: repeat(1, 2fr);
@@ -324,7 +364,9 @@ padding: 11px 0;
 #about div{
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    gap: 20px;}
+    gap: 20px;
+}
+}
 @media screen and (min-width: 850px){
     #plan div{
         display: grid;
@@ -383,7 +425,7 @@ padding: 11px 0;
   display: flex;
   }  
   #intro h2,#intro p{
-float:left;
+ float:left;
   }
   #img-grip{
       display: grid;
@@ -394,31 +436,32 @@ float:left;
   nav li:hover{
     background-color:#F6D64A ;
     padding: 10px 10px;
-}
-#plan div{
+ }
+ #plan div{
     display: grid;
     grid-template-columns: repeat(4, 2fr);
     gap: 20px;
     justify-content: center;
     align-items: center;
     
-}
-#about div{
+ }
+ #about div{
     display: grid;
     grid-template-columns: repeat(4, 2fr);
     gap: 20px;
     justify-content: center;
         align-items: center;
-}
-#testimonials div{
+ }
+ #testimonials div{
     display: grid;
     grid-template-columns: repeat(4, 2fr);
     gap:20px;
     justify-content: center;
     align-items: center;
-}
-#contact div{
+ }
+ #contact div{
     display: grid;
     grid-template-columns: repeat(1fr 2fr 1fr);
-}
-}
+ }
+} 
+ 
