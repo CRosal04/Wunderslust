@@ -264,9 +264,9 @@ footer{
 @media screen and (max-width: 767px) {
     header{
         display: grid;
-        grid-template-columns: 1fr 1fr  ; 
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-    }*/
+        grid-template-columns: 1fr 2fr 3fr ; 
+  
+    }
     #logo {
         height: auto;
         max-width: 40%;
