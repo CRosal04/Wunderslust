@@ -423,10 +423,11 @@ label{
     
    header{
         display: grid;
-          grid-template-columns: repeat(3, 2fr);
+          grid-template-columns: repeat(3, 3fr);
+         
     }
     header div{
-        max-width: 850px;
+        max-width: 800px;
         margin: 0 auto;
         grid-gap: 0.5rem;
         align-items: center;
@@ -437,11 +438,17 @@ label{
         grid-column: 2;
         grid-row: 1;
         margin-left: 30px;
+        
     }
     header p{
         grid-column: 2;
         grid-row: 2;
         margin-left: 30px;
+        position: relative;
+        top:-40px;
+    }
+    nav{
+        grid-column: 1 / -1;
     }
     nav li {
         
@@ -476,7 +483,11 @@ label{
     background-color:#F6D64A ;
     padding: 10px 10px;
     }
-    
+   #intro {
+        
+        justify-content: center;
+        align-items: center;
+    }
     #plan div{
         display: grid;
         grid-template-columns: repeat(2, 2fr);
@@ -499,7 +510,7 @@ label{
     align-items: center;
 }
 
-
+}
 @media screen and (min-width: 1250px){
   
   header{
@@ -509,7 +520,6 @@ label{
     grid-template-rows: repeat(1, 2fr);
   }
   header h1{
-    
     position:absolute;
         top:70px;
         left: 190px;
@@ -517,10 +527,9 @@ label{
  header p {
     grid-column: 2;
     grid-row: 2;
-    
     position: absolute;
-        top:120px;
-        left: 190px;
+    top:120px;
+    left: 190px;
   }
     #intro{
     padding: 5px;
@@ -534,20 +543,22 @@ label{
         grid-row: 1;
         margin-left: 9pc;
        position: relative;
-        top:100px;
-
+        top:80px;
+        grid-column: 1 / -1;
     }
     #intro p {
         grid-column: 1;
         grid-row: 2;
         position: relative;
-        bottom:600px;
-        padding:2px 40px 2px 90px ;
-        margin: 30px;
+        bottom:80px;
+        padding:2px 40px 2px 40px ;
+        margin: 10px;
+
     }
-         #img-grip{
-            position: absolute;
-            float: right;
+
+    #img-grip{
+        position: absolute;
+        float: right;
         display: grid;
         grid-template-columns: 1fr 1fr 3fr;
         grid-gap: 1.5rem;
@@ -561,6 +572,7 @@ label{
         width: auto; 
         display: flex; 
         justify-content: flex-end; 
+        
       }
     
     nav li {
@@ -626,4 +638,3 @@ label{
     grid-template-columns: repeat(1fr 2fr 1fr);
  }
 } 
- 
