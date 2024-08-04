@@ -245,6 +245,10 @@ label{
 .custom-select .focus {
     display: none;
 }
+span{
+    font-family: "Montserrat", sans-serif;
+    font-size: medium;
+}
 
 /* Submit Button Styles */
 input[type="submit"] {
@@ -406,10 +410,7 @@ display: flex;
     grid-template-columns: repeat(2, 2fr);
     gap: 20px;
 }
-span{
-    font-family: "Montserrat", sans-serif;
-    font-size: medium;
-}
+
 
 #contact {
     margin: 10px;
@@ -507,7 +508,7 @@ footer{
     #img-grid img{
         
         padding: 10px 10px;
-        object-fit: fit;
+        object-fit:fill;
         max-width: auto;
     }
     #plan div{
@@ -516,8 +517,12 @@ footer{
         gap: 20px;
         justify-content: center;
         align-items: center;
+        text-align: center;
         padding: 30px 30px;
+        margin: 3pc;
+        
     }
+        
     #about div{
         display: grid;
         grid-template-columns: repeat(4, 2fr);
@@ -532,8 +537,15 @@ footer{
     gap:20px;
     justify-content: center;
     align-items: center;
+    margin: 5pc;
 }
-
+#mySubmit{
+    width: 300px;
+    align-items: right;
+    text-align: center; 
+    justify-content: center;
+    padding: 20px 20px;
+}
 }
 @media screen and (min-width: 1250px){
   
