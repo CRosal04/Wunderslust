@@ -415,6 +415,11 @@ display: flex;
     margin: 10px;
     margin-left: 20px;
 }
+#contact form ,.custom-select{
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
 #mySubmit{
     width: 300px;
     align-items: center;
@@ -544,9 +549,13 @@ footer{
     align-items: center;
     margin: 5pc;
 }
+#contact {
+    margin: 10px;
+    margin-left: 20px;
+}
     #contact form ,.custom-select{
         max-width: 700px;
-        margin: 50px auto;
+        margin: auto;
         text-align: center;
 }
    
