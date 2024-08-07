@@ -575,12 +575,12 @@ footer{
 }
   fieldset {
     display: flex;
-    max-width: 800px;
+    max-width: 750px;
     flex-basis: 100%; 
     gap: 20px;
     border: none;
     padding: 0;
-    padding-left: 6%;
+    padding-left: 22%;
     align-items: center; 
   }
         
