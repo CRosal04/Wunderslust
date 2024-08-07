@@ -575,14 +575,16 @@ footer{
 }
   fieldset {
     display: flex;
+    max-width: 800px;
     flex-basis: 100%; 
     gap: 20px;
     border: none;
     padding: 0;
+    padding-left: 6%;
     align-items: center; 
   }
         
-}
+
 
 
 #mySubmit{
@@ -749,7 +751,14 @@ footer{
     border: none;
   
 }
-
+fieldset {
+    display: flex;
+    flex-basis: 100%;
+    gap: 20px;
+    border: none;
+    padding: 0;
+    align-items: center; 
+}
 .radio-input {
     display: flex;
     align-items: center; 
