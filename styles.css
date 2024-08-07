@@ -548,22 +548,28 @@ footer{
     justify-content: center;
     align-items: center;
     margin: 5pc;
+    
 }
 #contact {
-    margin: 10px;
+    margin: 200px;
 }
-    #contact form ,.custom-select{
+#contact form ,.custom-select, #testimonials div{
         max-width: 700px;
         margin: auto;
         text-align: center;
+        
+
 }
-   
+
+
 #mySubmit{
     width: 200px;
     align-items: right;
     text-align: center; 
     justify-content: center;
     padding: 10px 15px;
+    margin: 20px;
+    float:inline-end;
 
 }
 }
@@ -712,6 +718,24 @@ footer{
     align-items: center;
     gap: 10px;
 }
+#nums fieldset {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    gap: 15px; 
+    border: none;
+  
+}
+
+.radio-input {
+    display: flex;
+    align-items: center; 
+}
+
+.radio-label {
+    margin-left: 6px; 
+}
+
 footer {
     display: flex;
     justify-content: center; 
