@@ -383,7 +383,7 @@ display: flex;
    padding: 2px;
    margin-bottom: 5%;
   }
-  #intro h2, #intro p{
+#intro h2, #intro p{
       margin: 20px;
       word-spacing: 10px;
   }
@@ -457,44 +457,44 @@ footer{
 }
 @media screen and (min-width: 785px){
     
-   header{
-        display: grid;
-          grid-template-columns: repeat(3, 3fr);
+header{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
          
     }
-    header div{
-        max-width: 800px;
-        margin: 0 auto;
-        grid-gap: 0.5rem;
-        align-items: center;
+header div{
+    max-width: 800px;
+    margin: 0 auto;
+    grid-gap: 0.5rem;
+    align-items: center;
        
       }
     
-      header h1{
-        grid-column: 2;
-        grid-row: 1;
-        margin-left: 30px;
+header h1{
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 30px;
         
     }
-    header p{
-        grid-column: 2;
-        grid-row: 2;
-        margin-left: 30px;
-        position: relative;
+header p{
+    grid-column: 2;
+    grid-row: 2;
+    margin-left: 30px;
+    position: relative;
         top:-40px;
     }
-    nav{
+nav{
         grid-column: 1 / -1;
         position: relative;
         bottom: 60%;
     }
-    nav li {
+nav li {
         
-        margin-left: 5px;
-        background-color: #FFFFFF;
-        padding: 10px 8px;
+    margin-left: 5px;
+    background-color: #FFFFFF;
+    padding: 10px 8px;
       }
-    nav a{
+nav a{
     text-decoration:none;
     text-align: center;
     align-items: center;
@@ -508,7 +508,7 @@ footer{
     text-transform: uppercase;
     justify-content: center;
       }
-    nav ul{
+nav ul{
     list-style:none;
     display: flex;
     justify-content: center;
@@ -517,48 +517,48 @@ footer{
     }  
     
 
-    nav li:hover{
+nav li:hover{
     background-color:#F6D64A ;
     padding: 10px 8px;
     }
-   #intro {
-        margin: auto 0;
-        justify-content: center;
-        align-items: center;
-        padding: 30px 30px;
+#intro {
+    margin: auto 0;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px;
     }
-    #img-grid{
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        flex-wrap: wrap;
+#img-grid{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
     }
     
-    #img-grid img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px;
+#img-grid img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
     }
 
-    #plan div{
-        display: grid;
-        grid-template-columns: repeat(2, 2fr);
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 30px 30px;
-        margin: 3pc;
+#plan div{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 30px;
+    margin: 3pc;
         
     }
         
-    #about div{
-        display: grid;
-        grid-template-columns: repeat(4, 2fr);
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
-        padding: 30px 30px;
+#about div{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px;
 }
 #testimonials div{
     display: grid;
@@ -578,7 +578,7 @@ footer{
         text-align: center;
         
 }
-  fieldset {
+fieldset {
     display: flex;
     max-width: 750px;
     flex-basis: 100%; 
@@ -614,81 +614,80 @@ footer a {
 }
 @media screen and (min-width: 1250px){
   
-  header{
+header{
     padding-top: 40px;
     display: grid;
     grid-template-columns:0fr  1fr 2fr;
     grid-template-rows: repeat(1, 2fr);
   }
-  header h1{
+header h1{
     position:absolute;
-        top:70px;
-        left: 190px;
+    top:70px;
+    left: 190px;
   }
- header p {
+header p {
     grid-column: 2;
     grid-row: 2;
     position: absolute;
     top:120px;
     left: 190px;
   }
-    #intro{
+#intro{
     padding: 5px;
     display: grid;
     grid-template-columns:1fr 4fr;
    
     }
   
-    #intro h2 {
-        grid-column: 1;
-        grid-row: 1;
-        margin-left: 1pc;
-       position: relative;
-        top:80px;
-        grid-column: 1 / -1;
+#intro h2 {
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 1pc;
+    position: relative;
+    top:80px;
+    grid-column: 1 / -1;
     }
-    #intro p {
-        grid-column: 1/2;
-        grid-row: 2;
-        position: relative;
-        bottom:100px;
-        padding-left: 20px;
-        margin: 10px 0;
-
+#intro p {
+    grid-column: 1/2;
+    grid-row: 2;
+    position: relative;
+    bottom:100px;
+    padding-left: 20px;
+    margin: 10px 0;
     }
 
-    #img-grid{
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        flex-wrap: wrap;
+#img-grid{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
     }
     
-    #img-grid img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px;
+#img-grid img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
     }
 
          
   
-    nav {
-        position: absolute; 
-        top: 0; 
-        right: 0; 
-        width: auto; 
-        display: flex; 
-        justify-content: flex-end; 
+nav {
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    width: auto; 
+    display: flex; 
+    justify-content: flex-end; 
         
       }
     
-    nav li {
+nav li {
         
-        margin-left: 5px;
-        background-color: #FFFFFF;
-        padding: 8px 12px;
+    margin-left: 5px;
+    background-color: #FFFFFF;
+    padding: 8px 12px;
       }
-      nav a{
+nav a{
     
     position:relative;
     text-decoration:none;
@@ -704,7 +703,7 @@ footer a {
     text-transform: uppercase;
     justify-content: center;
       }
-    nav ul{
+nav ul{
     list-style:none;
     display: flex;
     justify-content: center;
@@ -714,7 +713,7 @@ footer a {
 
  
 
-  nav li:hover{
+nav li:hover{
     background-color:#F6D64A ;
     padding: 10px 10px;
  }
